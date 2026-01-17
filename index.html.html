@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Anant Tiffin Center</title>
+  <meta name="description" content="Anant Tiffin Center — Hygienic, fresh & affordable tiffin service in Bundi. Regular ₹80 | Special ₹100" />
+  <link rel="icon" href="images/favicon.png" />
+  <style>
+    /* Basic reset */
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{font-family:system-ui,-apple-system,Segoe UI,Roboto,'Noto Sans',"Helvetica Neue",Arial;line-height:1.4;color:#222}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    header{background:linear-gradient(90deg,#ff7a18,#ffb347);color:#fff;padding:18px 12px}
+    .container{max-width:1000px;margin:0 auto;padding:18px}
+    nav{display:flex;gap:10px;align-items:center;justify-content:space-between}
+    .nav-links{display:flex;gap:12px}
+    .btn{background:#fff;color:#ff6a00;padding:8px 12px;border-radius:8px;font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:18px;align-items:center}
+    .hero h1{font-size:28px;margin-bottom:8px}
+    .tag{background:rgba(255,255,255,0.15);padding:6px 10px;border-radius:8px;display:inline-block;margin-bottom:12px}
+    .card{background:#fff;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,0.06);padding:14px}
+    .price{font-size:20px;font-weight:700}
+    /* Responsive */
+    @media(max-width:880px){.hero{grid-template-columns:1fr}nav{flex-direction:column;gap:8px}.nav-links{flex-wrap:wrap}}
+    /* Sections */
+    section{padding:28px 0;border-bottom:1px solid #eee}
+    h2{font-size:20px;margin-bottom:12px}
+    .menu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+    .menu-item{background:#fff;padding:12px;border-radius:10px}
+    .plans{display:flex;gap:12px;flex-wrap:wrap}
+    .plan{flex:1;min-width:220px;padding:12px;border-radius:10px;background:linear-gradient(180deg,#fff,#fff);border:1px solid #f0f0f0}
+    .gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px}
+    .reviews{display:flex;flex-direction:column;gap:8px}
+    .review{background:#fff;padding:10px;border-radius:8px}
+    form .row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px}
+    input,textarea,select{padding:8px;border-radius:8px;border:1px solid #ddd;width:100%}
+    footer{padding:18px;text-align:center;font-size:14px;color:#666}
+    /* WhatsApp floating */
+    .whatsapp{position:fixed;right:18px;bottom:18px;background:#25d366;color:#fff;padding:12px;border-radius:50%;box-shadow:0 8px 20px rgba(0,0,0,0.2);display:flex;align-items:center;justify-content:center}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div style="display:flex;gap:12px;align-items:center">
+          <div style="width:56px;height:56px;border-radius:10px;background:#fff;padding:8px;display:flex;align-items:center;justify-content:center;font-weight:800;color:#ff6a00">A</div>
+          <div>
+            <div style="font-weight:800">Anant Tiffin Center</div>
+            <div style="font-size:12px">Guru Nank Colon, Bundi</div>
+          </div>
+        </div>
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#menu">Menu</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#contact">Contact</a>
+          <a class="btn" href="#order">Order Now</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="home" class="hero" style="padding-top:18px">
+      <div>
+        <div class="tag">Fresh • Hygienic • On-time</div>
+        <h1>Ghar jaisa khana — Roz, time par delivery</h1>
+        <p>Anant Tiffin Center — Bundi mein quality tiffin service. Regular ₹80 | Special ₹100. Bulk orders or monthly subscription available.</p>
+        <div style="display:flex;gap:10px;margin-top:12px">
+          <a class="btn" href="#order">Order Now</a>
+          <a href="#menu" style="align-self:center">Dekho Menu</a>
+        </div>
+      </div>
+      <div>
+        <div class="card">
+          <div style="text-align:center">
+            <img src="images/hero.jpg" alt="Home banner" style="border-radius:8px;height:220px;object-fit:cover;width:100%"/>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:10px">
+            <div>
+              <div style="font-size:14px;font-weight:700">Regular Tiffin</div>
+              <div style="font-size:13px;color:#666">₹80 / day</div>
+            </div>
+            <div class="price">Special ₹100</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <div class="card">
+        <p><strong>Anant Tiffin Center</strong> ek chhota par vishwasniya tiffin seva hai jo Guru Nank Colon, Bundi mein sthit hai. Hum ghar jaisa swad, safai aur time par delivery dene ka promise karte hain. Humari team hygienic practices follow karti hai aur roz naya khana banaya jata hai.</p>
+        <p><strong>Address:</strong> Guru Nank Colon, Bundi</p>
+      </div>
+    </section>
+
+    <section id="menu">
+      <h2>Menu</h2>
+      <div class="card">
+        <p><em>Menu abhi upload nahi hua hai — tum mujhe items bhejo to main yahan add kar dunga.</em></p>
+        <div class="menu-grid" id="menuGrid">
+          <!-- Placeholder items: replace when you send menu -->
+          <div class="menu-item"><strong>Example Item 1</strong><div style="font-size:13px;color:#666">Description of item</div><div style="margin-top:6px;font-weight:700">₹80</div></div>
+          <div class="menu-item"><strong>Example Item 2</strong><div style="font-size:13px;color:#666">Description of item</div><div style="margin-top:6px;font-weight:700">₹100</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing">
+      <h2>Pricing Plans</h2>
+      <div class="plans">
+        <div class="plan card">
+          <h3>Regular Tiffin</h3>
+          <p>Simple, balanced meal — ₹80 per day.</p>
+          <p><strong>Best for:</strong> Daily home-food at affordable price.</p>
+        </div>
+        <div class="plan card">
+          <h3>Special Tiffin</h3>
+          <p>Thoda zyada variety aur special item — ₹100 per day.</p>
+          <p><strong>Best for:</strong> Extra taste & variety.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <div class="gallery-grid card">
+        <img src="images/food1.jpg" alt="food 1" />
+        <img src="images/food2.jpg" alt="food 2" />
+        <img src="images/food3.jpg" alt="food 3" />
+        <img src="images/kitchen.jpg" alt="kitchen" />
+      </div>
+    </section>
+
+    <section id="reviews">
+      <h2>Customer Reviews</h2>
+      <div class="reviews card" id="reviewsList">
+        <div class="review">"Bahut accha khana aur time par delivery." — Ramesh</div>
+        <div class="review">"Hygienic aur tasty. Price bilkul theek." — Sunita</div>
+        <div class="review">"Monthly subscription li, quality consistent rahi." — Suresh</div>
+        <!-- Add more reviews here -->
+      </div>
+    </section>
+
+    <section id="faq">
+      <h2>FAQs</h2>
+      <div class="card">
+        <details><summary>Kya monthly subscription available hai?</summary><p>Haan, monthly plans available hain — contact karke confirm karein.</p></details>
+        <details><summary>Delivery timing kya hai?</summary><p>Subah aur dopahar ke timings available hain — order form me timing select karein.</p></details>
+        <details><summary>Kya prepaid option hai?</summary><p>Haan, prepaid aur COD dono options hain.</p></details>
+      </div>
+    </section>
+
+    <section id="order">
+      <h2>Order Now</h2>
+      <div class="card">
+        <form id="orderForm">
+          <div class="row">
+            <div style="flex:1">
+              <label>Full Name</label>
+              <input type="text" id="name" required />
+            </div>
+            <div style="width:200px">
+              <label>Phone</label>
+              <input type="tel" id="phone" required placeholder="+91" />
+            </div>
+          </div>
+          <div class="row">
+            <div style="flex:1">
+              <label>Address</label>
+              <input id="address" required placeholder="Delivery address" />
+            </div>
+            <div style="width:180px">
+              <label>Plan</label>
+              <select id="plan">
+                <option value="regular">Regular — ₹80</option>
+                <option value="special">Special — ₹100</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div style="flex:1">
+              <label>Delivery Time</label>
+              <select id="time">
+                <option>Lunch (12:00 - 1:30)</option>
+                <option>Dinner (7:00 - 9:00)</option>
+              </select>
+            </div>
+            <div style="width:120px">
+              <label>Qty (days)</label>
+              <input type="number" id="qty" min="1" value="1" />
+            </div>
+          </div>
+          <div style="margin-top:8px">
+            <label>Note (optional)</label>
+            <textarea id="note" rows="3" placeholder="Allergies / preferences"></textarea>
+          </div>
+          <div style="margin-top:12px;display:flex;gap:8px">
+            <button type="submit" class="btn">Place Order</button>
+            <a id="whatsLink" class="btn" style="background:#25d366;color:#fff">Order via WhatsApp</a>
+          </div>
+        </form>
+        <div id="orderSuccess" style="display:none;margin-top:10px;padding:10px;border-radius:8px;background:#f0fff4;border:1px solid #bff0c8">Order received. We'll contact you soon.</div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <div class="card">
+        <p><strong>Anant Tiffin Center</strong></p>
+        <p>Address: Guru Nank Colon, Bundi</p>
+        <p>Phone: <em>(aap ka phone number yahan dalein)</em></p>
+        <p>Email: <em>(optional)</em></p>
+        <p><a href="https://maps.google.com" target="_blank">Open in Google Maps</a></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    © <span id="year"></span> Anant Tiffin Center — All rights reserved.
+  </footer>
+
+  <a class="whatsapp" id="whatsappBtn" href="#" title="WhatsApp">WA</a>
+
+  <script>
+    // Small JS: dynamic year, order form, whatsapp link
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const whatsappNumber = '917000000000'; // <-- Replace with your number (country code + number) e.g. 9198XXXXXXXX
+    const whatsBtn = document.getElementById('whatsappBtn');
+    const whatsLink = document.getElementById('whatsLink');
+    function makeWA(text){
+      return 'https://wa.me/' + whatsappNumber.replace(/\D/g,'') + '?text=' + encodeURIComponent(text);
+    }
+    whatsBtn.href = makeWA('Hello, I want to order a tiffin from Anant Tiffin Center');
+    whatsLink.href = makeWA('Hello, I want to order a tiffin from Anant Tiffin Center');
+
+    document.getElementById('orderForm').addEventListener('submit',function(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const plan = document.getElementById('plan').value;
+      const qty = Number(document.getElementById('qty').value) || 1;
+      const unit = plan === 'regular' ? 80 : 100;
+      const total = unit * qty;
+      // show success message and prepare whatsapp message
+      document.getElementById('orderSuccess').style.display = 'block';
+      const msg = `Order from ${name}%0APhone: ${phone}%0APlan: ${plan} (%E2%82%B980/%E2%82%B9100)%0AQty: ${qty}%0ATotal: ₹${total}%0AAddress: ${document.getElementById('address').value}`;
+      whatsLink.href = 'https://wa.me/' + whatsappNumber.replace(/\D/g,'') + '?text=' + msg;
+      // In real site, you would send this data to your server or Google Sheets via AJAX
+    });
+
+    // Smooth scrolling for nav links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',function(e){
+        if(this.getAttribute('href') === '#') return;
+        e.preventDefault();
+        const id = this.getAttribute('href').substring(1);
+        const el = document.getElementById(id);
+        if(el) el.scrollIntoView({behavior:'smooth',block:'start'});
+      })
+    });
+  </script>
+
+  <!--
+    Installation notes:
+    1) Save this file as index.html inside a folder.
+    2) Create an 'images' folder and add: hero.jpg, food1.jpg, food2.jpg, food3.jpg, kitchen.jpg, favicon.png
+    3) Replace whatsappNumber in the script with your actual WhatsApp number (like 9198XXXXXXXX).
+    4) To publish: upload the folder to any static host (GitHub Pages / Netlify / Vercel) or share the index.html file.
+    5) Send me the actual menu items and photos to update the Menu & Gallery.
+  -->
+</body>
+</html>
