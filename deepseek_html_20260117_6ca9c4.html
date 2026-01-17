@@ -1,0 +1,1548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANANT TIFFIN CENTER - Authentic Indian Tiffin Service in Bundi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --saffron: #FF9933; /* भगवा - भारतीय रंग */
+            --green: #138808; /* हरा - भारतीय रंग */
+            --accent: #FF6B35; /* गर्म नारंगी */
+            --cream: #FFF5E1; /* क्रीम रंग */
+            --brown: #8B4513; /* भूरा - मिट्टी जैसा */
+            --white: #FFFFFF;
+            --text: #333333;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--cream);
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+        }
+        
+        /* Header & Navigation */
+        .top-bar {
+            background: linear-gradient(to right, var(--saffron), var(--green));
+            color: var(--white);
+            padding: 0.8rem 0;
+            font-size: 0.9rem;
+        }
+        
+        .top-bar-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 1rem;
+        }
+        
+        .contact-info {
+            display: flex;
+            gap: 2rem;
+        }
+        
+        .contact-info i {
+            margin-right: 0.5rem;
+        }
+        
+        header {
+            background-color: var(--white);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 3px solid var(--saffron);
+        }
+        
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 1rem;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .logo-icon {
+            font-size: 2.5rem;
+            color: var(--saffron);
+        }
+        
+        .logo-text h1 {
+            font-size: 1.8rem;
+            background: linear-gradient(to right, var(--saffron), var(--green));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.2rem;
+        }
+        
+        .logo-text p {
+            font-size: 0.9rem;
+            color: var(--brown);
+            font-weight: 500;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: var(--brown);
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: var(--transition);
+        }
+        
+        nav a:hover {
+            background-color: var(--saffron);
+            color: var(--white);
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--brown);
+            cursor: pointer;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                        url('https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1800&q=80');
+            background-size: cover;
+            background-position: center;
+            color: var(--white);
+            text-align: center;
+            padding: 8rem 1rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        .hero h1 span {
+            color: var(--saffron);
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .hero-btns {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(to right, var(--saffron), var(--accent));
+            color: var(--white);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+        }
+        
+        .btn-secondary:hover {
+            background-color: var(--white);
+            color: var(--brown);
+            transform: translateY(-3px);
+        }
+        
+        /* Specialities Section */
+        .specialities {
+            padding: 5rem 1rem;
+            background-color: var(--white);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--brown);
+            display: inline-block;
+            position: relative;
+            padding-bottom: 1rem;
+        }
+        
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(to right, var(--saffron), var(--green));
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+        
+        .specialities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .speciality-card {
+            background-color: var(--cream);
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            transition: var(--transition);
+            border: 2px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .speciality-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--saffron);
+            box-shadow: var(--shadow);
+        }
+        
+        .speciality-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--saffron), var(--accent));
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin: 0 auto 1.5rem;
+            transition: var(--transition);
+        }
+        
+        .speciality-card:hover .speciality-icon {
+            transform: rotate(360deg);
+        }
+        
+        /* Daily Tiffin Menu */
+        .tiffin-menu {
+            padding: 5rem 1rem;
+            background-color: var(--cream);
+        }
+        
+        .tiffin-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: var(--white);
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: var(--shadow);
+            border: 3px solid var(--saffron);
+        }
+        
+        .tiffin-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 2px dashed var(--saffron);
+        }
+        
+        .tiffin-header h3 {
+            font-size: 2rem;
+            color: var(--brown);
+            margin-bottom: 0.5rem;
+        }
+        
+        .tiffin-header p {
+            color: var(--green);
+            font-weight: 500;
+        }
+        
+        .menu-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .menu-item {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 1rem;
+            background-color: var(--cream);
+            border-radius: 10px;
+            transition: var(--transition);
+        }
+        
+        .menu-item:hover {
+            transform: translateX(10px);
+            background-color: #FFF0E0;
+        }
+        
+        .item-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--green), #4CAF50);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+        
+        .item-content h4 {
+            color: var(--brown);
+            margin-bottom: 0.3rem;
+        }
+        
+        .item-content p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        /* Weekly Rotation */
+        .weekly-rotation {
+            background-color: #FFF9F0;
+            padding: 2rem;
+            border-radius: 15px;
+            border-left: 5px solid var(--saffron);
+        }
+        
+        .rotation-title {
+            color: var(--brown);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .rotation-title i {
+            color: var(--saffron);
+            font-size: 1.5rem;
+        }
+        
+        .rotation-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        .rotation-item {
+            background-color: var(--white);
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            border: 1px solid var(--saffron);
+            font-weight: 500;
+            color: var(--brown);
+        }
+        
+        /* Indian Food Section */
+        .indian-food {
+            padding: 5rem 1rem;
+            background: linear-gradient(rgba(255, 153, 51, 0.1), rgba(19, 136, 8, 0.1));
+        }
+        
+        .food-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .food-card {
+            background-color: var(--white);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border: 2px solid transparent;
+        }
+        
+        .food-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--saffron);
+        }
+        
+        .food-img {
+            height: 200px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .food-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .food-card:hover .food-img img {
+            transform: scale(1.1);
+        }
+        
+        .food-content {
+            padding: 1.5rem;
+            text-align: center;
+        }
+        
+        .food-content h3 {
+            color: var(--brown);
+            margin-bottom: 0.5rem;
+        }
+        
+        .food-tag {
+            display: inline-block;
+            background-color: var(--green);
+            color: var(--white);
+            padding: 0.3rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-bottom: 1rem;
+        }
+        
+        /* Target Audience */
+        .audience {
+            padding: 5rem 1rem;
+            background-color: var(--white);
+        }
+        
+        .audience-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .audience-card {
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--cream);
+            border-radius: 15px;
+            transition: var(--transition);
+        }
+        
+        .audience-card:hover {
+            background: linear-gradient(135deg, var(--saffron), var(--accent));
+            color: var(--white);
+        }
+        
+        .audience-card:hover .audience-icon {
+            background-color: var(--white);
+            color: var(--saffron);
+        }
+        
+        .audience-icon {
+            width: 70px;
+            height: 70px;
+            background-color: var(--saffron);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            margin: 0 auto 1.5rem;
+            transition: var(--transition);
+        }
+        
+        /* What We Don't Serve */
+        .not-served {
+            padding: 3rem 1rem;
+            background-color: #FFF5F5;
+            text-align: center;
+        }
+        
+        .not-served h3 {
+            color: var(--brown);
+            margin-bottom: 1rem;
+        }
+        
+        .not-served-items {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        .not-served-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #666;
+            font-weight: 500;
+        }
+        
+        .not-served-item i {
+            color: #FF4444;
+        }
+        
+        /* Pricing */
+        .pricing {
+            padding: 5rem 1rem;
+            background-color: var(--cream);
+        }
+        
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .pricing-card {
+            background-color: var(--white);
+            border-radius: 15px;
+            padding: 2.5rem;
+            text-align: center;
+            transition: var(--transition);
+            position: relative;
+            border: 2px solid var(--cream);
+        }
+        
+        .pricing-card.popular {
+            border-color: var(--saffron);
+            transform: scale(1.05);
+        }
+        
+        .popular-badge {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(to right, var(--saffron), var(--accent));
+            color: var(--white);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        
+        .plan-name {
+            font-size: 1.5rem;
+            color: var(--brown);
+            margin-bottom: 1rem;
+        }
+        
+        .plan-price {
+            font-size: 3rem;
+            background: linear-gradient(to right, var(--saffron), var(--green));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1.5rem;
+        }
+        
+        .plan-price span {
+            font-size: 1rem;
+            color: var(--text);
+        }
+        
+        .plan-features {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+        
+        .plan-features li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+        
+        .plan-features li i {
+            color: var(--green);
+        }
+        
+        /* Tiffin Box Section */
+        .tiffin-box {
+            padding: 5rem 1rem;
+            background: linear-gradient(rgba(255, 245, 225, 0.9), rgba(255, 245, 225, 0.9)), 
+                        url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1800&q=80');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+        }
+        
+        .tiffin-box-content {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            border: 3px solid var(--saffron);
+        }
+        
+        .tiffin-box-icon {
+            font-size: 4rem;
+            color: var(--saffron);
+            margin-bottom: 1.5rem;
+        }
+        
+        /* Contact */
+        .contact {
+            padding: 5rem 1rem;
+            background-color: var(--white);
+        }
+        
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+        
+        .contact-info h3 {
+            font-size: 2rem;
+            color: var(--brown);
+            margin-bottom: 1.5rem;
+        }
+        
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .contact-detail {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .contact-detail i {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--saffron), var(--accent));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+        }
+        
+        .contact-form {
+            background-color: var(--cream);
+            padding: 2rem;
+            border-radius: 15px;
+            border: 2px solid var(--saffron);
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--brown);
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        /* Footer */
+        footer {
+            background: linear-gradient(to right, var(--brown), #5D4037);
+            color: var(--white);
+            padding: 3rem 1rem 1rem;
+        }
+        
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-logo .logo-text h1 {
+            background: linear-gradient(to right, var(--saffron), var(--white));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .footer-links h4,
+        .footer-hours h4 {
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+            color: var(--saffron);
+        }
+        
+        .footer-links h4::after,
+        .footer-hours h4::after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 3px;
+            background-color: var(--saffron);
+            bottom: 0;
+            left: 0;
+        }
+        
+        .footer-links ul {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .footer-links a {
+            color: var(--white);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .footer-links a:hover {
+            color: var(--saffron);
+            padding-left: 0.5rem;
+        }
+        
+        .hours-list li {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.8rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .social-icons a {
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            transition: var(--transition);
+        }
+        
+        .social-icons a:hover {
+            background-color: var(--saffron);
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        /* WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: var(--white);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+            z-index: 100;
+            transition: var(--transition);
+            text-decoration: none;
+        }
+        
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 25px rgba(37, 211, 102, 0.4);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+            
+            .pricing-card.popular {
+                transform: none;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                gap: 0.5rem;
+                text-align: center;
+                display: none;
+            }
+            
+            nav.active ul {
+                display: flex;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+                position: absolute;
+                top: 2rem;
+                right: 1rem;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero-btns {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+            
+            .tiffin-container {
+                padding: 2rem 1rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .top-bar-content {
+                flex-direction: column;
+                gap: 0.5rem;
+                text-align: center;
+            }
+            
+            .contact-info {
+                justify-content: center;
+            }
+            
+            .hero {
+                padding: 5rem 1rem;
+            }
+            
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .whatsapp-float {
+                bottom: 1rem;
+                right: 1rem;
+                width: 50px;
+                height: 50px;
+                font-size: 1.5rem;
+            }
+            
+            .menu-items {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* Animation Classes */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="top-bar-content">
+            <div class="contact-info">
+                <div><i class="fas fa-phone"></i> 6378005086</div>
+                <div><i class="fas fa-clock"></i> Mon-Sat: 7 AM - 10 PM</div>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-utensils logo-icon"></i>
+                <div class="logo-text">
+                    <h1>ANANT TIFFIN CENTER</h1>
+                    <p>Authentic Indian Tiffin Service</p>
+                </div>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#specialities">Specialities</a></li>
+                    <li><a href="#tiffin-menu">Daily Tiffin</a></li>
+                    <li><a href="#indian-food">Indian Food</a></li>
+                    <li><a href="#audience">For Whom</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content fade-in">
+            <h1>Authentic Indian <span>Tiffin Service</span> in Bundi</h1>
+            <p>Fresh homemade Roti, Dal, Sabzi, Rice, Chutney & Salad delivered daily. Pure vegetarian, hygienic, and healthy meals just like home.</p>
+            <div class="hero-btns">
+                <a href="#tiffin-menu" class="btn btn-primary">
+                    <i class="fas fa-utensils"></i> View Today's Tiffin
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <i class="fas fa-calendar-alt"></i> Start Daily Tiffin
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Specialities Section -->
+    <section id="specialities" class="specialities">
+        <div class="section-title">
+            <h2>Our Specialities</h2>
+        </div>
+        <div class="specialities-grid">
+            <div class="speciality-card fade-in">
+                <div class="speciality-icon">
+                    <i class="fas fa-mortar-pestle"></i>
+                </div>
+                <h3>Dal Baati Churma</h3>
+                <p>Authentic Rajasthani dal baati served with churma and garlic chutney - Our weekend speciality</p>
+            </div>
+            <div class="speciality-card fade-in">
+                <div class="speciality-icon">
+                    <i class="fas fa-bread-slice"></i>
+                </div>
+                <h3>Fresh Roti/Chapati</h3>
+                <p>Soft, hot rotis made fresh daily on traditional tawa - Just like mother makes</p>
+            </div>
+            <div class="speciality-card fade-in">
+                <div class="speciality-icon">
+                    <i class="fas fa-carrot"></i>
+                </div>
+                <h3>Seasonal Vegetables</h3>
+                <p>Daily changing sabzis made from fresh market vegetables with Indian spices</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Daily Tiffin Menu -->
+    <section id="tiffin-menu" class="tiffin-menu">
+        <div class="section-title">
+            <h2>Daily Tiffin Menu</h2>
+        </div>
+        <div class="tiffin-container fade-in">
+            <div class="tiffin-header">
+                <h3>Today's Complete Tiffin</h3>
+                <p>Perfectly balanced meal delivered fresh daily</p>
+            </div>
+            
+            <div class="menu-items">
+                <div class="menu-item">
+                    <div class="item-icon">
+                        <i class="fas fa-bread-slice"></i>
+                    </div>
+                    <div class="item-content">
+                        <h4>Roti/Chapati (3-4 pieces)</h4>
+                        <p>Freshly made whole wheat roti, soft and hot</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-icon">
+                        <i class="fas fa-carrot"></i>
+                    </div>
+                    <div class="item-content">
+                        <h4>Seasonal Sabzi</h4>
+                        <p>Paneer/Vegetable curry with Indian spices</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-icon">
+                        <i class="fas fa-mortar-pestle"></i>
+                    </div>
+                    <div class="item-content">
+                        <h4>Dal/Tadka</h4>
+                        <p>Yellow dal or dal fry with perfect tempering</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-icon">
+                        <i class="fas fa-utensil-spoon"></i>
+                    </div>
+                    <div class="item-content">
+                        <h4>Rice/Pulao</h4>
+                        <p>Steamed rice or vegetable pulao</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <div class="item-content">
+                        <h4>Salad</h4>
+                        <p>Fresh cucumber, onion, tomato salad</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-icon">
+                        <i class="fas fa-pepper-hot"></i>
+                    </div>
+                    <div class="item-content">
+                        <h4>Chutney/Pickle</h4>
+                        <p>Green chutney or mango pickle</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="weekly-rotation">
+                <h3 class="rotation-title"><i class="fas fa-sync-alt"></i> Weekly Rotation (So you don't get bored)</h3>
+                <div class="rotation-items">
+                    <span class="rotation-item">Monday: Paneer Butter Masala</span>
+                    <span class="rotation-item">Tuesday: Mix Vegetable</span>
+                    <span class="rotation-item">Wednesday: Aloo Gobhi</span>
+                    <span class="rotation-item">Thursday: Chole Masala</span>
+                    <span class="rotation-item">Friday: Lauki ki Sabzi</span>
+                    <span class="rotation-item">Saturday: Dal Baati Special</span>
+                    <span class="rotation-item">Sunday: Rajma Chawal</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Indian Food Section -->
+    <section id="indian-food" class="indian-food">
+        <div class="section-title">
+            <h2>Authentic Indian Food</h2>
+        </div>
+        <div class="food-grid">
+            <div class="food-card fade-in">
+                <div class="food-img">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Indian Thali">
+                </div>
+                <div class="food-content">
+                    <span class="food-tag">Complete Meal</span>
+                    <h3>Traditional Indian Thali</h3>
+                    <p>Balanced meal with all essential nutrients</p>
+                </div>
+            </div>
+            <div class="food-card fade-in">
+                <div class="food-img">
+                    <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Dal Fry">
+                </div>
+                <div class="food-content">
+                    <span class="food-tag">Protein Rich</span>
+                    <h3>Dal Fry with Tadka</h3>
+                    <p>Perfectly tempered lentils with ghee</p>
+                </div>
+            </div>
+            <div class="food-card fade-in">
+                <div class="food-img">
+                    <img src="https://images.unsplash.com/photo-1594041680534-e8c8cdebd659?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Fresh Roti">
+                </div>
+                <div class="food-content">
+                    <span class="food-tag">Fresh Daily</span>
+                    <h3>Hot Fresh Rotis</h3>
+                    <p>Made fresh for every tiffin</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Target Audience -->
+    <section id="audience" class="audience">
+        <div class="section-title">
+            <h2>Perfect For</h2>
+        </div>
+        <div class="audience-grid">
+            <div class="audience-card fade-in">
+                <div class="audience-icon">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <h3>Working Professionals</h3>
+                <p>Bank employees, office workers, corporate employees - Healthy lunch at desk</p>
+            </div>
+            <div class="audience-card fade-in">
+                <div class="audience-icon">
+                    <i class="fas fa-user-graduate"></i>
+                </div>
+                <h3>Students</h3>
+                <p>Hostel students tired of mess food - Affordable homely meals</p>
+            </div>
+            <div class="audience-card fade-in">
+                <div class="audience-icon">
+                    <i class="fas fa-home"></i>
+                </div>
+                <h3>Busy Families</h3>
+                <p>Dual-income families - Home-cooked taste without cooking effort</p>
+            </div>
+            <div class="audience-card fade-in">
+                <div class="audience-icon">
+                    <i class="fas fa-user-md"></i>
+                </div>
+                <h3>Senior Citizens</h3>
+                <p>Elderly who can't cook daily - Nutritious, easy-to-digest meals</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- What We DON'T Serve -->
+    <section class="not-served">
+        <div class="section-title">
+            <h2>Pure Indian Tiffin Service</h2>
+        </div>
+        <h3>We DO NOT serve:</h3>
+        <div class="not-served-items">
+            <div class="not-served-item">
+                <i class="fas fa-times-circle"></i>
+                <span>No Pizza</span>
+            </div>
+            <div class="not-served-item">
+                <i class="fas fa-times-circle"></i>
+                <span>No Burger</span>
+            </div>
+            <div class="not-served-item">
+                <i class="fas fa-times-circle"></i>
+                <span>No Chinese Food</span>
+            </div>
+            <div class="not-served-item">
+                <i class="fas fa-times-circle"></i>
+                <span>No Fast Food</span>
+            </div>
+        </div>
+        <p style="margin-top: 1rem; color: var(--green); font-weight: 500;">
+            <i class="fas fa-check-circle"></i> We specialize ONLY in authentic Indian homemade tiffin meals
+        </p>
+    </section>
+    
+    <!-- Tiffin Box Section -->
+    <section class="tiffin-box">
+        <div class="tiffin-box-content fade-in">
+            <div class="tiffin-box-icon">
+                <i class="fas fa-box"></i>
+            </div>
+            <h2 style="color: var(--brown); margin-bottom: 1rem;">Fresh Tiffin Delivery</h2>
+            <p style="margin-bottom: 1.5rem;">Every tiffin is packed fresh in hygienic containers and delivered to your doorstep. We use quality tiffin boxes that keep your food warm and fresh.</p>
+            <div style="display: flex; justify-content: center; gap: 2rem; margin-top: 2rem;">
+                <div style="text-align: center;">
+                    <i class="fas fa-temperature-high" style="color: var(--saffron); font-size: 2rem;"></i>
+                    <p style="font-weight: 500; margin-top: 0.5rem;">Keeps Food Hot</p>
+                </div>
+                <div style="text-align: center;">
+                    <i class="fas fa-shield-alt" style="color: var(--green); font-size: 2rem;"></i>
+                    <p style="font-weight: 500; margin-top: 0.5rem;">Hygienic Packing</p>
+                </div>
+                <div style="text-align: center;">
+                    <i class="fas fa-truck" style="color: var(--accent); font-size: 2rem;"></i>
+                    <p style="font-weight: 500; margin-top: 0.5rem;">Timely Delivery</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Pricing -->
+    <section id="pricing" class="pricing">
+        <div class="section-title">
+            <h2>Tiffin Plans & Pricing</h2>
+        </div>
+        <div class="pricing-grid">
+            <div class="pricing-card fade-in">
+                <h3 class="plan-name">Weekly Plan</h3>
+                <div class="plan-price">₹ 700<span>/week</span></div>
+                <ul class="plan-features">
+                    <li><i class="fas fa-check"></i> 7 Days Complete Tiffin</li>
+                    <li><i class="fas fa-check"></i> 3 Rotis + Sabzi + Dal + Rice</li>
+                    <li><i class="fas fa-check"></i> Salad & Chutney Included</li>
+                    <li><i class="fas fa-check"></i> Daily Fresh Delivery</li>
+                    <li><i class="fas fa-check"></i> Flexible Timings</li>
+                </ul>
+                <a href="#contact" class="btn btn-primary">Start This Week</a>
+            </div>
+            <div class="pricing-card popular fade-in">
+                <div class="popular-badge">MOST POPULAR</div>
+                <h3 class="plan-name">Monthly Plan</h3>
+                <div class="plan-price">₹ 2500<span>/month</span></div>
+                <ul class="plan-features">
+                    <li><i class="fas fa-check"></i> 30 Days Complete Tiffin</li>
+                    <li><i class="fas fa-check"></i> 3 Rotis + Sabzi + Dal + Rice</li>
+                    <li><i class="fas fa-check"></i> Salad & Chutney Included</li>
+                    <li><i class="fas fa-check"></i> Daily Fresh Delivery</li>
+                    <li><i class="fas fa-check"></i> Saturday: Dal Baati Special</li>
+                    <li><i class="fas fa-check"></i> Free Pickle & Papad</li>
+                </ul>
+                <a href="#contact" class="btn btn-primary">Best Value</a>
+            </div>
+            <div class="pricing-card fade-in">
+                <h3 class="plan-name">One Day Trial</h3>
+                <div class="plan-price">₹ 120<span>/day</span></div>
+                <ul class="plan-features">
+                    <li><i class="fas fa-check"></i> Single Day Trial</li>
+                    <li><i class="fas fa-check"></i> 3 Rotis + Sabzi + Dal + Rice</li>
+                    <li><i class="fas fa-check"></i> Salad & Chutney Included</li>
+                    <li><i class="fas fa-check"></i> Experience Quality First</li>
+                    <li><i class="fas fa-check"></i> No Commitment</li>
+                </ul>
+                <a href="#contact" class="btn btn-primary">Try Today</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="section-title">
+            <h2>Start Your Tiffin Today</h2>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info fade-in">
+                <h3>Contact Information</h3>
+                <div class="contact-details">
+                    <div class="contact-detail">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Our Location</h4>
+                            <p>Bundi, Rajasthan 323001</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone Number</h4>
+                            <p>6378005086</p>
+                            <p>Call for tiffin inquiry or delivery</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Tiffin Timings</h4>
+                            <p>Lunch Delivery: 12:00 PM - 1:30 PM</p>
+                            <p>Dinner Delivery: 7:30 PM - 9:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top: 2rem;">
+                    <h4 style="color: var(--brown); margin-bottom: 1rem;">Why Choose Us?</h4>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--green);"></i> Pure Vegetarian Indian Food</li>
+                        <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--green);"></i> Daily Fresh Ingredients</li>
+                        <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--green);"></i> Homemade Taste Guaranteed</li>
+                        <li><i class="fas fa-check" style="color: var(--green);"></i> On-time Delivery Promise</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contact-form fade-in">
+                <h3 style="color: var(--brown); margin-bottom: 1.5rem;">Order Your Tiffin</h3>
+                <form id="orderForm">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" placeholder="6378005086" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Delivery Address *</label>
+                        <textarea id="address" placeholder="House no, Area, Bundi" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="plan">Select Tiffin Plan *</label>
+                        <select id="plan" required>
+                            <option value="">Choose a plan</option>
+                            <option value="monthly">Monthly Plan (₹2500) - Best Value</option>
+                            <option value="weekly">Weekly Plan (₹700)</option>
+                            <option value="trial">One-day Trial (₹120)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="timing">Preferred Delivery Time *</label>
+                        <select id="timing" required>
+                            <option value="">Select time</option>
+                            <option value="lunch">Lunch (12:00-1:30 PM)</option>
+                            <option value="dinner">Dinner (7:30-9:00 PM)</option>
+                            <option value="both">Both Lunch & Dinner</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">
+                        <i class="fas fa-paper-plane"></i> Submit Tiffin Order
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <div class="logo">
+                    <i class="fas fa-utensils logo-icon"></i>
+                    <div class="logo-text">
+                        <h1>ANANT TIFFIN CENTER</h1>
+                        <p>Authentic Indian Tiffin Service</p>
+                    </div>
+                </div>
+                <p style="margin-top: 1rem;">Serving Bundi with fresh homemade Indian meals since 2018. Your daily tiffin partner for healthy living.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#specialities">Our Specialities</a></li>
+                    <li><a href="#tiffin-menu">Daily Tiffin</a></li>
+                    <li><a href="#indian-food">Indian Food</a></li>
+                    <li><a href="#pricing">Pricing Plans</a></li>
+                    <li><a href="#contact">Order Tiffin</a></li>
+                </ul>
+            </div>
+            <div class="footer-hours">
+                <h4>Tiffin Service Hours</h4>
+                <ul class="hours-list">
+                    <li><span>Monday - Saturday:</span> <span>7 AM - 10 PM</span></li>
+                    <li><span>Lunch Delivery:</span> <span>12:00 - 1:30 PM</span></li>
+                    <li><span>Dinner Delivery:</span> <span>7:30 - 9:00 PM</span></li>
+                    <li><span>Sunday:</span> <span>Special Dal Baati Day</span></li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="color: var(--saffron); margin-bottom: 1.5rem;">We Serve Only</h4>
+                <ul style="list-style: none;">
+                    <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--green);"></i> Roti, Dal, Sabzi, Rice</li>
+                    <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--green);"></i> Salad & Chutney</li>
+                    <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--green);"></i> Dal Baati Churma</li>
+                    <li><i class="fas fa-check" style="color: var(--green);"></i> Pure Indian Vegetarian</li>
+                </ul>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/916378005086"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 ANANT TIFFIN CENTER. Serving Authentic Indian Tiffin in Bundi. | Phone: 6378005086</p>
+        </div>
+    </footer>
+    
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/916378005086?text=Hello%20ANANT%20TIFFIN%20CENTER!%20I%20want%20to%20order%20tiffin%20service." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const nav = document.querySelector('nav');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            mobileMenuBtn.innerHTML = nav.classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+        
+        // Form Submission
+        const orderForm = document.getElementById('orderForm');
+        orderForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const plan = document.getElementById('plan').value;
+            const timing = document.getElementById('timing').value;
+            const address = document.getElementById('address').value;
+            
+            // Prepare WhatsApp message
+            const message = `Hello ANANT TIFFIN CENTER!%0A%0A*New Tiffin Order Request*%0A%0AName: ${name}%0APhone: ${phone}%0AAddress: ${address}%0APlan: ${plan}%0ATiming: ${timing}%0A%0APlease confirm my tiffin service.`;
+            
+            // Open WhatsApp with pre-filled message
+            window.open(`https://wa.me/916378005086?text=${message}`, '_blank');
+            
+            // Show confirmation
+            alert('Thank you for your tiffin order! We have opened WhatsApp for confirmation. Please send the message to confirm your order.');
+            
+            // Reset form
+            orderForm.reset();
+        });
+        
+        // Scroll Animations
+        const fadeElements = document.querySelectorAll('.fade-in');
+        
+        const appearOnScroll = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    appearOnScroll.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+        
+        fadeElements.forEach(element => {
+            appearOnScroll.observe(element);
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                
+                if (targetSection) {
+                    // Close mobile menu if open
+                    if (nav.classList.contains('active')) {
+                        nav.classList.remove('active');
+                        mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                    }
+                    
+                    window.scrollTo({
+                        top: targetSection.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Daily Menu Rotation (Optional Feature)
+        const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        const today = new Date().getDay();
+        const todayName = days[today];
+        
+        // Update today's special in menu
+        const todaySpecialElement = document.querySelector('.tiffin-header h3');
+        if (todaySpecialElement) {
+            const specials = {
+                0: 'Sunday Special: Rajma Chawal',
+                1: 'Monday Special: Paneer Butter Masala',
+                2: 'Tuesday Special: Mix Vegetable',
+                3: 'Wednesday Special: Aloo Gobhi',
+                4: 'Thursday Special: Chole Masala',
+                5: 'Friday Special: Lauki ki Sabzi',
+                6: 'Saturday Special: Dal Baati Churma'
+            };
+            
+            todaySpecialElement.textContent = specials[today];
+        }
+    </script>
+</body>
+</html>
